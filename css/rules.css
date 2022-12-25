@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Titan+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Fonts */
+  --titanOne: "Titan One", Aria, sans-serif;
+  --oswald: "Oswald", Arial, sans-serif;
+  --acme: "Acme", Arial, sans-serif;
+
+  /* Colors */
+  --orange: #ffbe0b;
+  --purple: #8338ec;
+  --blue: #3a86ff;
+  --red: red;
+  --white: white;
+}
+
+html {
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  cursor: default;
+  scroll-behavior: smooth;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 16px;
+  font-family: var(--titanOne);
+  background-color: var(--orange);
+  width: 100%;
+  height: 100vh;
+}
+
+.rules-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  margin-top: 5rem;
+  text-decoration: underline var(--red) 5px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: var(--blue);
+}
+
+header span {
+  color: var(--purple);
+}
+
+.resume {
+  margin-top: 5rem;
+  color: var(--blue);
+}
+.resume p {
+  padding: 0.5rem 0;
+  text-align: center;
+}
+
+.resume span {
+  color: var(--purple);
+}
+
+.animate__animated {
+  --animate-repeat: 1;
+  --animate-duration: 1s;
+}
+
+a {
+  margin-top: 5rem;
+  padding: 0.8rem 2rem;
+  font-size: 1.2rem;
+  font-family: "Acme";
+  color: white;
+  text-decoration: none;
+  border: #3a86ff 1px solid;
+  border-radius: 2rem;
+  background: #8338ec;
+}
+
+a:hover {
+  cursor: pointer;
+}

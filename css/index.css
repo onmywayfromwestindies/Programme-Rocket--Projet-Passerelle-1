@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Titan+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  cursor: default;
+  scroll-behavior: smooth;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  text-rendering: optimizeSpeed;
+  position: relative;
+  font-size: 16px;
+  font-family: "Titan One", cursive, Arial, sans-serif;
+  background-color: #ffbe0b;
+}
+
+.container-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 95vh;
+}
+
+.container-title h1 {
+  font-size: 3.2rem;
+  color: red;
+  position: sticky;
+}
+
+.animate__animated {
+  --animate-repeat: 1;
+  --animate-duration: 1s;
+}
+
+.container-title a {
+  margin: 2rem;
+  padding: 0.8rem 2rem;
+  font-size: 1.2rem;
+  font-family: "Acme";
+  color: white;
+  text-decoration: none;
+  border: #3a86ff 1px solid;
+  border-radius: 2rem;
+  background: #8338ec;
+}
+
+.container-title a:hover {
+  cursor: pointer;
+}
+
+footer {
+  margin-left: 1.5rem;
+  height: 5vh;
+  font-family: "Oswald", cursive, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 200;
+  color: red;
+}
+#date {
+  color: #3a86ff;
+}
+
+#im {
+  color: #8338ec;
+}
+#dot {
+  color: red;
+}
+
+#io {
+  color: #3a86ff;
+}
